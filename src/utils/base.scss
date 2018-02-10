@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+/*css 初始化 */
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset,
+img,
+input,
+button {
+	padding: 0;
+	margin: 0;
+}
+
+
+/*去掉input等聚焦时的蓝色边框*/
+
+ul,
+ol {
+	list-style: none;
+}
+
+
+/*input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}*/
+
+select,
+input {
+	vertical-align: middle;
+}
+
+
+/*select, input, textarea { font-size:12px; margin:0; }*/
+
+textarea {
+	resize: none;
+}
+
+
+/*防止拖动*/
+
+img {
+	border: 0;
+	vertical-align: middle;
+}
+
+
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+
+table {
+	border-collapse: collapse;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+
+/***********************************************************/
+
+
+/*min-width指的是版心容器的宽度，乱设会造成水平有滚动条*/
+
+
+/**********************************************************/
+
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+	visibility: hidden;
+	zoom: 1;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+
+/*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+
+s,
+i,
+em {
+	font-style: normal;
+	text-decoration: none;
+}
+
+
+/*公共类*/
+
+.container {
+	/*版心 提取 */
+	width: 100%;
+	margin: 0 auto;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.al {
+	text-align: left;
+}
+
+.ac {
+	text-align: center;
+}
+
+.ar {
+	text-align: right;
+}
+
+.hide {
+	display: none;
+}
+
+.font12 {
+	font-size: 12px;
+}
+
+.font14 {
+	font-size: 14px;
+}
+
+.font16 {
+	font-size: 16px;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+
+/*公共部分*/
+
+/*头部导航开始*/
+.header{
+	height:66px;
+	line-height: 66px;
+	background:#002140;
+	padding:  0 32px;
+
+	h1{
+	      font-size: 22px;
+	      font-weight: bold;
+	      color: #fff;
+	      span{
+	          padding-left: 10px;
+	      }
+	}
+	li{
+	    float: left;
+	    padding: 0 20px;
+	}
+	
+}
+
+.userbox{
+    position: relative;
+    .form{
+        padding-left: 15%;
+        position: absolute;
+        top:150px;
+        z-index: 3000;
+       div:nth-child(1){
+           width: 300px;
+       }
+        p{  
+            color: #fff;
+            padding: 20px 0;
+           label{
+               padding-right: 10px;
+           }
+           button{
+               margin-right:20px ;
+           }
+           input{
+               padding-left: 10px;
+               color: #000;
+           }
+        }
+        
+    }
+    .welcome{
+        padding-top: 5%;
+        font-size: 38px;
+        word-spacing: 20px;
+        color: #ccc;
+        .bigsize{
+            font-size: 48px;
+            font-weight: bold;
+            font-family:"Times New Roman",Georgia,Serif
+        }
+    }
+    
+}
+
+.snow-container {
+    position: absolute;
+    height:590px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    background-color: #001529;
+}
+
+.snow {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    -webkit-animation: snow linear infinite;
+    animation: snow linear infinite;
+}
+
+.snow.foreground {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+}
+
+.snow.foreground.layered {
+    -webkit-animation-delay: 7.5s;
+    animation-delay: 7.5s;
+}
+
+.snow.middleground {
+    background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png);
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+}
+
+.snow.middleground.layered {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+.snow.background {
+    background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png);
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+}
+
+.snow.background.layered {
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+}
+
+@-webkit-keyframes snow {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(15%, 100%, 0);
+        transform: translate3d(15%, 100%, 0);
+    }
+}
+
+@keyframes snow {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(15%, 100%, 0);
+        transform: translate3d(15%, 100%, 0);
+    }
+}

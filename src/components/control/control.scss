@@ -1,0 +1,155 @@
+.controlBox{
+    padding-top: 30px;
+    .head{
+        h1{
+            font-size: 32px;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        p{
+            color: #ccc;
+            padding-bottom: 10px;
+            text-indent: 30px;
+        }
+    }
+    .form{
+        p{
+            padding: 20px 10px;
+            label{
+                display: block;
+            }
+        }
+        button{
+            position: relative;
+            left: 30px;
+        }
+    }
+}
+.listbox{
+    .checkli{
+        height: 350px;
+        margin: 10px 2px;
+    }
+    li{
+        border: 1px solid #dbdbdb;
+        padding: 20px;
+        width: 250px;
+       
+        float: left;
+        margin-left: 10px;
+        img{
+            width: 200px;
+            height: 150px;
+        }
+        p{
+            padding: 6px;
+            padding-right: 4px;
+            color: cornflowerblue;
+            font-weight: bold;
+            span{
+                color: #333;
+                font-weight:200 ;
+                padding-left: 40px;
+            }
+        }
+        button{
+            margin-right: 8px;
+        }
+    }
+    .planlist{
+        width: 500px;
+        margin-left:30px ;
+        margin-bottom: 30px;
+        
+    }
+    table{
+        margin-left: 30px;
+        margin-top: 30px;
+        border: 1px solid gainsboro;
+        text-align: center;
+        width: 806px;
+        th{
+            border: 1px solid gainsboro;
+            padding: 15px 9px;
+            font-size: 18px;
+            
+        }
+        td{
+            padding: 15px 5px;
+            width: 200px;
+            font-size: 16px;
+            border: 1px solid gainsboro;
+        }
+        tr:nth-child(2n){
+            background-color: beige;
+        }
+        th{
+            background: cornflowerblue;
+            color:#fff;
+        }
+        li{
+            border: 0 none;
+            margin: 0;
+            padding: 0;
+            float: left;
+            width: 32px;
+        }
+    }
+}
+.rbox{
+        margin-top: 30px;
+        border: 1px solid gainsboro;
+        text-align: center;
+        td,th{
+            border: 1px solid gainsboro;
+            padding: 15px 35px;
+            font-size: 20px;
+            
+        }
+        th{
+            background: cornflowerblue;
+            color:#fff;
+        }
+    }
+.blue{
+    color: cornflowerblue;
+    font-weight: bold;
+    padding: 6px;
+    
+}
+input{
+    width: 100%;
+}
+.adminhead{
+    height: 66px;
+    width: 100%;
+    background-color:#FFFFFF;
+    position: fixed;
+    top: 0px;
+    right: -256px;
+    z-index: 1000;
+    border-bottom: 2px solid #F7F8F8;
+    ul{
+        float: right;
+        margin-right:290px;
+    }
+    li{
+        line-height: 66px;
+        float: left;
+        width: 150px;
+        font-size: 16px;
+        text-align: center;
+        span{
+            padding: 0 10px;
+            font-weight: bold;
+            color: #333;
+        }
+    }
+   
+}
+.top{
+    color:red;
+}
+.public{
+    color:#ccc;
+}
